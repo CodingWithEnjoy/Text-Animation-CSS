@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fa">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      body {
+        display: grid;
+        place-items: center;
+        height: 100vh;
+      }
+
+      .text-animation {
+        font-size: 200px;
+        font-family: "RokhVF";
+        font-weight: 900;
+        color: transparent;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        -webkit-background-clip: text;
+        box-decoration-break: clone;
+        -webkit-box-decoration-break: clone;
+        background-image: -webkit-image-set(url(https://designmodo.com/wp-content/themes/designmodo/custom-pages/postcards/assets/img/text_background@1x.webp) 1x,url(https://designmodo.com/wp-content/themes/designmodo/custom-pages/postcards/assets/img/text_background@1x.webp) 2x);
+        background-image: image-set(
+          "https://designmodo.com/wp-content/themes/designmodo/custom-pages/postcards/assets/img/text_background@1x.webp"
+            1x,
+          "https://designmodo.com/wp-content/themes/designmodo/custom-pages/postcards/assets/img/text_background@1x.webp"
+            2x
+        );
+        background-repeat: repeat;
+        background-size: 1024px;
+        animation: diagonal-flow 70s linear infinite,
+          hue-rotate 23s linear infinite;
+      }
+
+      @keyframes diagonal-flow {
+        0% {
+          background-position: 100px 100px;
+        }
+
+        100% {
+          background-position: -5020px 4196px;
+        }
+      }
+    </style>
+    <title>Text Animation</title>
+  </head>
+  <body>
+    <span class="text-animation">ویدیو یوتیوب</span>
+  </body>
+</html>
